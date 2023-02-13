@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container_formulario">
+      <header>
+        <img src="/imagens/logo1.jpg" id="logo" alt="foto de perfil" />
+        <h1>Carrinho</h1>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Loja</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="gradiente">
+        <section class="checkout-details">
+          <div class="checkout-details-inner">
+            <div class="checkout-lists">
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="https://i.pinimg.com/564x/d0/a6/a8/d0a6a8362fa3ebc9792158e455843c5e.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-details">
+                  <div class="card-name">Chaveiro Naruto</div>
+                  <div class="card-price">R$99.99</div>
+                  <div class="card-wheel">
+                    <button class="cart">-</button>
+                    <span class="qtd">2</span>
+                    <button class="cart">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src="https://i.pinimg.com/564x/57/54/38/57543821a45e44190189ea74b0c65ac1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="card-details">
+                  <div class="card-name">Chaveiro Itachi</div>
+                  <div class="card-price">R$59.99 <span>R$79.99</span></div>
+                  <!-- SPAN para os valores ficarem um do lado do outro -->
+                  <div class="card-wheel">
+                    <button class="cart">-</button>
+                    <span class="qtd">2</span>
+                    <button class="cart">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-shipping">
+              <h6>Frete</h6>
+              <p>R$100</p>
+            </div>
+            <div class="checkout-total">
+              <h6>Total</h6>
+              <p>R$159.98</p>
+            </div>
+            <div class="form-control-btn">
+              <button>Continue</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="button-container-div">
+          <button
+            value="Voltar ao início"
+            onclick="window.location.href='#top'"
+          >
+            Voltar ao início!
+          </button>
+        </div>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

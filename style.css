@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #517b66;
+  grid-area: header;
+  border-bottom: 3px solid black;
+}
+
+footer {
+  background-image: url("/imagens/footer1.jpg");
+  background-size: contain;
+  background-position: center;
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr 2fr 0.2fr;
+    grid-template-areas: "header" "aside" "main" "footer";
+  }
+}
+
+#logo {
+  margin: 5px 40px;
+  border-radius: 50%;
+  border: 5px solid black;
+  box-shadow: 5px 5px 2px;
+  width: 200px;
+  height: 160px;
+}
+
+nav ul li {
+  padding-right: 60px;
+  padding-bottom: 5px;
+  font-size: 25px;
+  text-decoration: none;
+}
+nav ul li a {
+  color: rgb(18, 19, 19);
+  text-decoration: none;
+}
+
+header h1 {
+  font-size: 50px;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+button {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #608562;
+  border-radius: 10px;
+  border: none;
+  color: rgb(230, 233, 237);
+  padding: 15px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-container-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lowscore {
+  color: red;
+}
+
+.carrinho_icon {
+  text-decoration: none;
+}
+
+.carrinho_icon {
+  margin-top: -03px;
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 5px solid lightgray;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  margin: 40px 20px;
+  background-color: white;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: rgb(0, 255, 85);
+}
+
+.add-to-cart-button {
+  padding: 10px 20px;
+  background-color: rgb(141, 155, 237);
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.add-to-cart-button:hover {
+  background-color: rgb(0, 229, 255);
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: lightgray;
+  font-size: 0.875rem;
+}
+
+.discount-price {
+  color: rgb(14, 82, 159);
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  margin: 10px 0;
+  text-align: center;
+  padding: 0px;
+}
+
+.gradiente {
+  background: radial-gradient(
+    circle,
+    hsla(107, 64%, 31%, 1) 0%,
+    hsla(216, 72%, 66%, 1) 100%
+  );
+}
+
+.product-card:hover > .product-image {
+  transform: scale(1.1);
+}
+
+.checkout-details-inner {
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  width: 800px;
+  margin: 20px auto;
+}
+
+.checkout-lists {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  column-gap: 15px;
+}
+
+.card-image {
+  width: 25%;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card-price {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(8, 107, 41);
+  margin-top: 5px;
+}
+
+span {
+  color: #4e5150;
+  text-decoration: line-through;
+  margin-left: 16px;
+}
+
+.card-wheel {
+  margin-top: 17px;
+  border: 0.2px solid #4e515085;
+  width: 180px;
+  padding: 8px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  background: #e0e0e0;
+  color: #828282;
+  width: 5px;
+  height: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 0%;
+}
+
+.checkout-shipping,
+.checkout-total {
+  display: flex;
+  font-size: 26px;
+  padding: 5px 0px;
+  border-top: 1px solid #bdbdbd;
+  justify-content: space-between;
+}
+
+.checkout-details-inner p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.qtd {
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0%;
+}
+
+.form-control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form-control-btn button {
+  font-family: "Yanone Kaffeesatz", "Trebuchet MS";
+  font-size: 25px;
+  display: block;
+  margin-bottom: 5px;
+  height: 80px;
+  font-weight: bold;
+}
